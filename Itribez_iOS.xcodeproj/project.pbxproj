@@ -13,6 +13,8 @@
 		03A78A3B2A66DDDA00C88418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A392A66DDDA00C88418 /* Main.storyboard */; };
 		03A78A3D2A66DDDC00C88418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A3C2A66DDDC00C88418 /* Assets.xcassets */; };
 		03A78A402A66DDDC00C88418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A3E2A66DDDC00C88418 /* LaunchScreen.storyboard */; };
+		03EC556A2A6852E800C6F4DB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC55692A6852E800C6F4DB /* Signup.storyboard */; };
+		03EC556C2A6852FC00C6F4DB /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		03A78A3C2A66DDDC00C88418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03A78A3F2A66DDDC00C88418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03A78A412A66DDDC00C88418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03EC55692A6852E800C6F4DB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				03A78A3C2A66DDDC00C88418 /* Assets.xcassets */,
 				03A78A3E2A66DDDC00C88418 /* LaunchScreen.storyboard */,
 				03A78A412A66DDDC00C88418 /* Info.plist */,
+				03EC55692A6852E800C6F4DB /* Signup.storyboard */,
+				03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */,
 			);
 			path = Itribez_iOS;
 			sourceTree = "<group>";
@@ -126,7 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A78A402A66DDDC00C88418 /* LaunchScreen.storyboard in Resources */,
+				03EC556C2A6852FC00C6F4DB /* SignIn.storyboard in Resources */,
 				03A78A3D2A66DDDC00C88418 /* Assets.xcassets in Resources */,
+				03EC556A2A6852E800C6F4DB /* Signup.storyboard in Resources */,
 				03A78A3B2A66DDDA00C88418 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
