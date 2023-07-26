@@ -3,7 +3,7 @@ import UIKit
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var welcomeBackLabel: UILabel!
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var rememberMeCheckbox: UIButton!
     @IBOutlet weak var rememberMeLabel: UILabel!
@@ -35,7 +35,7 @@ class SignInViewController: UIViewController {
         let validUsername = "your_username"
         let validPassword = "your_password"
         
-        guard let username = usernameTextField.text,
+        guard let username = emailTextField.text,
               let password = passwordTextField.text else {
             // Handle empty input fields
             return

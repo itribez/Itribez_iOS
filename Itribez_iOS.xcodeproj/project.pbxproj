@@ -15,6 +15,8 @@
 		03A78A402A66DDDC00C88418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A3E2A66DDDC00C88418 /* LaunchScreen.storyboard */; };
 		03EC556A2A6852E800C6F4DB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC55692A6852E800C6F4DB /* Signup.storyboard */; };
 		03EC556C2A6852FC00C6F4DB /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */; };
+		B2349CA92A718593001E4315 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2349CA82A718593001E4315 /* Notification.storyboard */; };
+		B2349CAB2A718DF0001E4315 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2349CAA2A718DF0001E4315 /* NotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		03A78A412A66DDDC00C88418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EC55692A6852E800C6F4DB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		B2349CA82A718593001E4315 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		B2349CAA2A718DF0001E4315 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +67,14 @@
 				03A78A332A66DDDA00C88418 /* AppDelegate.swift */,
 				03A78A352A66DDDA00C88418 /* SceneDelegate.swift */,
 				03A78A372A66DDDA00C88418 /* SignInViewController.swift */,
+				B2349CAA2A718DF0001E4315 /* NotificationViewController.swift */,
 				03A78A392A66DDDA00C88418 /* Main.storyboard */,
 				03A78A3C2A66DDDC00C88418 /* Assets.xcassets */,
 				03A78A3E2A66DDDC00C88418 /* LaunchScreen.storyboard */,
 				03A78A412A66DDDC00C88418 /* Info.plist */,
 				03EC55692A6852E800C6F4DB /* Signup.storyboard */,
 				03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */,
+				B2349CA82A718593001E4315 /* Notification.storyboard */,
 			);
 			path = Itribez_iOS;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 				03A78A3D2A66DDDC00C88418 /* Assets.xcassets in Resources */,
 				03EC556A2A6852E800C6F4DB /* Signup.storyboard in Resources */,
 				03A78A3B2A66DDDA00C88418 /* Main.storyboard in Resources */,
+				B2349CA92A718593001E4315 /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +155,7 @@
 			files = (
 				03A78A382A66DDDA00C88418 /* SignInViewController.swift in Sources */,
 				03A78A342A66DDDA00C88418 /* AppDelegate.swift in Sources */,
+				B2349CAB2A718DF0001E4315 /* NotificationViewController.swift in Sources */,
 				03A78A362A66DDDA00C88418 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
