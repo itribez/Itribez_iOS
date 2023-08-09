@@ -46,14 +46,12 @@
 		0357A03F2A832C8200035C5B /* MessageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0357A03E2A832C8200035C5B /* MessageContainerView.swift */; };
 		03A78A342A66DDDA00C88418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78A332A66DDDA00C88418 /* AppDelegate.swift */; };
 		03A78A362A66DDDA00C88418 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78A352A66DDDA00C88418 /* SceneDelegate.swift */; };
-		03A78A382A66DDDA00C88418 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78A372A66DDDA00C88418 /* SignInViewController.swift */; };
+		03A78A382A66DDDA00C88418 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78A372A66DDDA00C88418 /* ViewController.swift */; };
 		03A78A3B2A66DDDA00C88418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A392A66DDDA00C88418 /* Main.storyboard */; };
 		03A78A3D2A66DDDC00C88418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A3C2A66DDDC00C88418 /* Assets.xcassets */; };
 		03A78A402A66DDDC00C88418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A3E2A66DDDC00C88418 /* LaunchScreen.storyboard */; };
 		03EC556A2A6852E800C6F4DB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC55692A6852E800C6F4DB /* Signup.storyboard */; };
 		03EC556C2A6852FC00C6F4DB /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */; };
-		B204EF702A83283400DEC9CA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204EF6F2A83283400DEC9CA /* NotificationView.swift */; };
-		B204EF722A83298900DEC9CA /* NotificationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B204EF712A83298900DEC9CA /* NotificationContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,15 +93,13 @@
 		03A78A302A66DDDA00C88418 /* Itribez_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Itribez_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A78A332A66DDDA00C88418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03A78A352A66DDDA00C88418 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03A78A372A66DDDA00C88418 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		03A78A372A66DDDA00C88418 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03A78A3A2A66DDDA00C88418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03A78A3C2A66DDDC00C88418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03A78A3F2A66DDDC00C88418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03A78A412A66DDDC00C88418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EC55692A6852E800C6F4DB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
-		B204EF6F2A83283400DEC9CA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		B204EF712A83298900DEC9CA /* NotificationContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,10 +226,8 @@
 				03579FDE2A82B60200035C5B /* Itribez_iOSApp.swift */,
 				03579FDD2A82B60200035C5B /* Persistence.swift */,
 				03A78A332A66DDDA00C88418 /* AppDelegate.swift */,
-				B204EF6F2A83283400DEC9CA /* NotificationView.swift */,
 				03A78A352A66DDDA00C88418 /* SceneDelegate.swift */,
-				03A78A372A66DDDA00C88418 /* SignInViewController.swift */,
-				B204EF712A83298900DEC9CA /* NotificationContainerView.swift */,
+				03A78A372A66DDDA00C88418 /* ViewController.swift */,
 				03A78A392A66DDDA00C88418 /* Main.storyboard */,
 				03A78A3C2A66DDDC00C88418 /* Assets.xcassets */,
 				03A78A3E2A66DDDC00C88418 /* LaunchScreen.storyboard */,
@@ -328,9 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0357A02C2A82C16600035C5B /* FeedViewModel.swift in Sources */,
+				0357A0392A82DE7000035C5B /* NotificationContainerView.swift in Sources */,
 				03579FE32A82B60300035C5B /* Itribez_iOSApp.swift in Sources */,
 				0357A01F2A82C0AB00035C5B /* LoginModel.swift in Sources */,
 				0357A0132A82BB1900035C5B /* SplashView.swift in Sources */,
+				0357A0232A82C13400035C5B /* NotificationView.swift in Sources */,
 				0357A0282A82C15C00035C5B /* FeedModel.swift in Sources */,
 				0357A0212A82C10500035C5B /* TabbarView.swift in Sources */,
 				0357A0252A82C14F00035C5B /* PostCell.swift in Sources */,
@@ -361,9 +357,6 @@
 				03A78A342A66DDDA00C88418 /* AppDelegate.swift in Sources */,
 				03A78A362A66DDDA00C88418 /* SceneDelegate.swift in Sources */,
 				03579FF12A82BA2900035C5B /* Toast.swift in Sources */,
-				03A78A382A66DDDA00C88418 /* SignInViewController.swift in Sources */,
-				B204EF702A83283400DEC9CA /* NotificationView.swift in Sources */,
-				B204EF722A83298900DEC9CA /* NotificationContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
