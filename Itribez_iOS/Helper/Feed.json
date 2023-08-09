@@ -1,0 +1,125 @@
+{
+    
+    "hightlights": [
+        {
+            "hightlightText":"Your Story",
+            "hightlightImg": "avtar"
+        },
+        {
+            "hightlightText":"John",
+            "hightlightImg": "people1"
+        },
+        {
+            "hightlightText":"Barry Mccoy",
+            "hightlightImg": "people2"
+        },
+        {
+            "hightlightText":"Maxine Poole",
+            "hightlightImg": "people3"
+        },
+        {
+            "hightlightText":"Brooke Higgins",
+            "hightlightImg": "people4"
+        },
+        {
+            "hightlightText":"Darren Meyer",
+            "hightlightImg": "people5"
+        },
+        {
+            "hightlightText":"Diana Graves",
+            "hightlightImg": "people6"
+        },
+        {
+            "hightlightText":"Pam Alvarado",
+            "hightlightImg": "people"
+        }
+    ],
+    
+	"feed": [
+        {
+            "id": 12,
+            "username": "indu_pandey",
+            "caption": "Accomodation available",
+            "imageurl": "https://www.fairmont.com/assets/0/104/1605/1610/5197/5203/8af0239c-83e7-446d-97a9-e6c041633649.jpg",
+            "location": "Noida,IN"
+        },
+       {
+           "id": 43,
+           "username": "charvi_01",
+           "caption": "Ride sharing  available to Toronto",
+           "imageurl": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/05/058acdde-6670-4a70-afb9-90250214037e?rule=kijijica-640-jpg",
+           "location": "Noida,IN"
+       },
+		{
+            "id": 5,
+            "username": "sinthu_007",
+			"caption": "Need help with this app assignment",
+			"imageurl": "https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg",
+            "location": "India"
+		},
+        {
+        
+            "id": 1,
+            "username": "saumya",
+            "caption": "Job Fair at Georgian College",
+            "imageurl": "https://content.georgiancollege.ca/wp-content/uploads/HIGH-RES-Career-Expo-2023-Flyer_FV03_HR-002-002-796x1024.jpg",
+            "location": "Georgian College, Barrie"
+        },
+		{
+            "id": 6,
+            "username": "brijal_patel",
+			"caption": "Ios Developement 2022",
+			"imageurl": "https://images.pexels.com/photos/5082581/pexels-photo-5082581.jpeg",
+            "location": "India"
+		},
+        {
+            "id": 43,
+            "username": "itribez_team",
+            "caption": "Learning new programming",
+            "imageurl": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
+            "location": "Vaughan"
+        },
+      
+        {
+            "id": 3,
+            "username": "indu_008",
+            "caption": "Desktop react application need help",
+            "imageurl": "https://user-images.githubusercontent.com/11384464/85966960-17839400-b976-11ea-8885-836f2e03c227.png",
+            "location": "Toronto"
+        },
+        {
+            "id": 22,
+            "username": "hitest",
+            "caption": "Must visit place",
+            "imageurl": "https://images.pexels.com/photos/9056599/pexels-photo-9056599.jpeg",
+            "location": "Maldives"
+        },
+        {
+            "id": 3,
+            "username": "drumil",
+            "caption": "Accomodation available at Barrie",
+            "imageurl": "https://www.fairmont.com/assets/0/104/1605/1610/5197/5203/8af0239c-83e7-446d-97a9-e6c041633649.jpg",
+            "location": "Barrie"
+        },
+        {    "id": 4,
+            "username": "eric",
+            "caption": "Learning new programming",
+            "imageurl": "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
+            "location": "India"
+        },
+        {
+            "id": 5,
+            "username": "ayushi",
+            "caption": "Programming world",
+            "imageurl": "https://images.pexels.com/photos/285814/pexels-photo-285814.jpeg",
+            "location": "India"
+        },
+        {
+            "id": 16,
+            "username": "vrunda",
+            "caption": "Ios Developement 2022",
+            "imageurl": "https://images.pexels.com/photos/5082581/pexels-photo-5082581.jpeg",
+            "location": "India"
+        }
+	]
+}
