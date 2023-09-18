@@ -51,6 +51,7 @@
 		03A78A402A66DDDC00C88418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A3E2A66DDDC00C88418 /* LaunchScreen.storyboard */; };
 		03EC556A2A6852E800C6F4DB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC55692A6852E800C6F4DB /* Signup.storyboard */; };
 		03EC556C2A6852FC00C6F4DB /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */; };
+		633B1DD72AB8C8500094680F /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B1DD62AB8C8500094680F /* loginView.swift */; };
 		EE275C382A6D6B2C0098DAA6 /* itribez.png in Resources */ = {isa = PBXBuildFile; fileRef = EE275C372A6D6B2C0098DAA6 /* itribez.png */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		03A78A412A66DDDC00C88418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EC55692A6852E800C6F4DB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		633B1DD62AB8C8500094680F /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		EE275C372A6D6B2C0098DAA6 /* itribez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itribez.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,6 +236,7 @@
 				03A78A412A66DDDC00C88418 /* Info.plist */,
 				03EC55692A6852E800C6F4DB /* Signup.storyboard */,
 				03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */,
+				633B1DD62AB8C8500094680F /* loginView.swift */,
 			);
 			path = Itribez_iOS;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				0357A03D2A82DF3600035C5B /* MockData.swift in Sources */,
 				03579FF32A82BA2900035C5B /* String + Extension.swift in Sources */,
 				03579FE22A82B60300035C5B /* Persistence.swift in Sources */,
+				633B1DD72AB8C8500094680F /* loginView.swift in Sources */,
 				0357A0242A82C14800035C5B /* FeedView.swift in Sources */,
 				0357A01D2A82C05400035C5B /* LoginViewModel.swift in Sources */,
 				03579FE92A82B7B500035C5B /* Itribez_iOS.xcdatamodeld in Sources */,
