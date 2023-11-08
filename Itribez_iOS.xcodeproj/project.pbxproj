@@ -52,8 +52,10 @@
 		03EC556A2A6852E800C6F4DB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC55692A6852E800C6F4DB /* Signup.storyboard */; };
 		03EC556C2A6852FC00C6F4DB /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */; };
 		633B1DD72AB8C8500094680F /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B1DD62AB8C8500094680F /* loginView.swift */; };
-		63A186042AC4BF1D006802F5 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A186032AC4BF1D006802F5 /* PostView.swift */; };
+		638920122AFB17FE00BB3763 /* ProfileContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638920102AFB17FE00BB3763 /* ProfileContainerView.swift */; };
+		638920132AFB17FE00BB3763 /* ActivityContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638920112AFB17FE00BB3763 /* ActivityContainerView.swift */; };
 		639DBA502AD623ED00A1F7DF /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DBA4F2AD623ED00A1F7DF /* ActivityView.swift */; };
+		63A186042AC4BF1D006802F5 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A186032AC4BF1D006802F5 /* PostView.swift */; };
 		EE275C382A6D6B2C0098DAA6 /* itribez.png in Resources */ = {isa = PBXBuildFile; fileRef = EE275C372A6D6B2C0098DAA6 /* itribez.png */; };
 /* End PBXBuildFile section */
 
@@ -103,8 +105,10 @@
 		03EC55692A6852E800C6F4DB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		633B1DD62AB8C8500094680F /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
-		63A186032AC4BF1D006802F5 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		638920102AFB17FE00BB3763 /* ProfileContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContainerView.swift; sourceTree = "<group>"; };
+		638920112AFB17FE00BB3763 /* ActivityContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityContainerView.swift; sourceTree = "<group>"; };
 		639DBA4F2AD623ED00A1F7DF /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		63A186032AC4BF1D006802F5 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		EE275C372A6D6B2C0098DAA6 /* itribez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itribez.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +204,8 @@
 		0357A0402A832C9400035C5B /* ContainerViews */ = {
 			isa = PBXGroup;
 			children = (
+				638920112AFB17FE00BB3763 /* ActivityContainerView.swift */,
+				638920102AFB17FE00BB3763 /* ProfileContainerView.swift */,
 				0357A0382A82DE7000035C5B /* NotificationContainerView.swift */,
 				0357A03E2A832C8200035C5B /* MessageContainerView.swift */,
 			);
@@ -332,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0357A02C2A82C16600035C5B /* FeedViewModel.swift in Sources */,
+				638920132AFB17FE00BB3763 /* ActivityContainerView.swift in Sources */,
 				0357A0392A82DE7000035C5B /* NotificationContainerView.swift in Sources */,
 				03579FE32A82B60300035C5B /* Itribez_iOSApp.swift in Sources */,
 				0357A01F2A82C0AB00035C5B /* LoginModel.swift in Sources */,
@@ -363,6 +370,7 @@
 				0357A03F2A832C8200035C5B /* MessageContainerView.swift in Sources */,
 				0357A0272A82C15A00035C5B /* ProfileModel.swift in Sources */,
 				0357A02B2A82C16400035C5B /* SearchViewModel.swift in Sources */,
+				638920122AFB17FE00BB3763 /* ProfileContainerView.swift in Sources */,
 				0357A0262A82C15100035C5B /* ReelsView.swift in Sources */,
 				0357A0292A82C15F00035C5B /* MenuModel.swift in Sources */,
 				03A78A342A66DDDA00C88418 /* AppDelegate.swift in Sources */,
