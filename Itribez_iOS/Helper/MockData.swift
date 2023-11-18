@@ -139,3 +139,30 @@ struct MockData {
     ]
     
 }
+
+var posts: [Post] = [
+       Post(user: User(userName: "ivanrakitik", userImage: "user_16"),
+            postImage: "post_1",
+            caption: "SERIAL, n. A literary work, usually a story that is not true, creeping through several issues of a newspaper or magazine.",
+            likes: "leomessi and others liked"),
+       Post(user: User(userName: "andreasiniesta", userImage: "user_15"),
+            postImage: "post_2",
+            caption: "I'm doing philosophy like an old woman, first I'm looking for my pencil, then I'm looking for my glasses, then I'm looking for my pencil again",
+            likes: "waynerooney and others liked"),
+       Post(user: User(userName: "sergioramos", userImage: "user_14"),
+            postImage: "post_3",
+            caption: "The way in which men cling to old institutions after the life has departed out of them, and out of themselves, reminds me of those monkeys which cling by their tails ... beyond the hunter's reach long after they are dead.",
+            likes: "leomessi and others liked"),
+       Post(user: User(userName: "antogriezmann", userImage: "user_13"),
+            postImage: "post_4",
+            caption: "I invite you to sit down in front of your television set when your station goes on the air ... and keep your eyes glued to that set until the station signs off. I can assure you that you will observe a great wasteland.",
+            likes: "davidbeckham and others liked"),
+       Post(user: User(userName: "iamzlatanibrahimovic", userImage: "user_12"),
+            postImage: "post_5",
+            caption: "O speculators about perpetual motion, how many vain chimeras have you created in the like quest? Go and take your place with the seekers after gold.",
+            likes: "sherlock and others liked"),
+       Post(user: User(userName: "fernandotorres", userImage: "user_11"),
+            postImage: "post_6",
+            caption: "After all, for mankind as a whole there are no exports. We did not start developing by obtaining foreign exchange from Mars or the moon. Mankind is a closed society.",
+            likes: "john_watson and others liked"),
+       ]

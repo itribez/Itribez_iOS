@@ -51,6 +51,8 @@
 		03A78A402A66DDDC00C88418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A78A3E2A66DDDC00C88418 /* LaunchScreen.storyboard */; };
 		03EC556A2A6852E800C6F4DB /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC55692A6852E800C6F4DB /* Signup.storyboard */; };
 		03EC556C2A6852FC00C6F4DB /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */; };
+		633955052B092963005DE1BE /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633955042B092963005DE1BE /* PostGridView.swift */; };
+		633955072B0929A6005DE1BE /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633955062B0929A6005DE1BE /* ProfileHeader.swift */; };
 		633B1DD72AB8C8500094680F /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B1DD62AB8C8500094680F /* loginView.swift */; };
 		638920122AFB17FE00BB3763 /* ProfileContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638920102AFB17FE00BB3763 /* ProfileContainerView.swift */; };
 		638920132AFB17FE00BB3763 /* ActivityContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638920112AFB17FE00BB3763 /* ActivityContainerView.swift */; };
@@ -104,6 +106,8 @@
 		03A78A412A66DDDC00C88418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EC55692A6852E800C6F4DB /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		03EC556B2A6852FC00C6F4DB /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		633955042B092963005DE1BE /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		633955062B0929A6005DE1BE /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		633B1DD62AB8C8500094680F /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		638920102AFB17FE00BB3763 /* ProfileContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContainerView.swift; sourceTree = "<group>"; };
 		638920112AFB17FE00BB3763 /* ActivityContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityContainerView.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				0357A0122A82BB1900035C5B /* SplashView.swift */,
 				0357A0202A82C10500035C5B /* TabbarView.swift */,
 				0357A0222A82C13400035C5B /* NotificationView.swift */,
+				633955042B092963005DE1BE /* PostGridView.swift */,
+				633955062B0929A6005DE1BE /* ProfileHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -345,11 +351,13 @@
 				0357A0132A82BB1900035C5B /* SplashView.swift in Sources */,
 				639DBA502AD623ED00A1F7DF /* ActivityView.swift in Sources */,
 				0357A0232A82C13400035C5B /* NotificationView.swift in Sources */,
+				633955052B092963005DE1BE /* PostGridView.swift in Sources */,
 				0357A0282A82C15C00035C5B /* FeedModel.swift in Sources */,
 				0357A0212A82C10500035C5B /* TabbarView.swift in Sources */,
 				0357A0252A82C14F00035C5B /* PostCell.swift in Sources */,
 				03579FF42A82BA2900035C5B /* AsyncImage.swift in Sources */,
 				0357A0372A82DCA600035C5B /* NotificationModel.swift in Sources */,
+				633955072B0929A6005DE1BE /* ProfileHeader.swift in Sources */,
 				03A78A382A66DDDA00C88418 /* ViewController.swift in Sources */,
 				0357A02D2A82C16800035C5B /* ProfileViewModel.swift in Sources */,
 				03579FF62A82BA2900035C5B /* ThemeHelper.swift in Sources */,
