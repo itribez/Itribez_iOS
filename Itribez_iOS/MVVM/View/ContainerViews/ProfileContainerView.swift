@@ -12,8 +12,8 @@ struct ProfileContainerView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     ProfileHeader(user: user)
-                    ProfileControlButtonsView()
-                    ProfileMediaSelectionView()
+//                    ProfileControlButtonsView()
+//                    ProfileMediaSelectionView()
                     PostGridView(posts: MockData().posts)
                 }
             }
