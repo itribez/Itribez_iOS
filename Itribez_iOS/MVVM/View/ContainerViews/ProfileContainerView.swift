@@ -5,16 +5,16 @@
 import SwiftUI
 
 struct ProfileContainerView: View {
-    private let user: User = User(userName: "pankajgaikar", userImage: "user_16")
+//    private let user: User = User(userName: "pankajgaikar", userImage: "user_16")
     
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    ProfileHeader(user: user)
+//                    ProfileHeader(user: user)
 //                    ProfileControlButtonsView()
 //                    ProfileMediaSelectionView()
-                    PostGridView(posts: MockData().posts)
+//                    PostGridView(posts: MockData().posts)
                 }
             }
             .navigationBarTitle("", displayMode: .inline)

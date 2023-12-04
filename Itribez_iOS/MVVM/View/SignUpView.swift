@@ -1,20 +1,22 @@
 //
-//  loginView.swift
+//  SignUpView.swift
 //  Itribez_iOS
 //
-//  Created by Devarshi on 18/09/23.
+//  Created by Indu Pandey on 03/12/23.
 //
 
 import SwiftUI
 
-struct LoginView: View {
-    
-    
+struct SignUpView: View {
+    @State var username:String = ""
+    @State var firstname:String = ""
+    @State var lastname:String = ""
     @State var emailID:String = ""
     @State var password:String = ""
-    @ObservedObject var viewModel = LoginViewModel()
+    
+    @ObservedObject var viewModel = SignUpViewModel()
     @State private var showShareSheet = false
-    @State var isLoginEnable:Bool = false
+    @State var isSignUpEnable:Bool = false
     
     @FocusState var focused: focusedField?
     @State var showPassword: Bool = false
@@ -22,39 +24,37 @@ struct LoginView: View {
         VStack { Divider().background(.gray) }.padding()
     }
     
-    
     enum focusedField {
         case secure, unSecure
     }
     
-    
+
     var body: some View {
         
         NavigationView{
             VStack{
                 //Header top
-                HStack(spacing: 12){
-                    
-                    HStack{
-                        Spacer()
-                        Button(action: {
-                            
-                        }) {
-                            Image(uiImage: UIImage.init(named: "close")!)
-                                .resizable()
-                            
-                                .frame(width: 20, height: 20)
-                                .scaledToFit()
-                                .foregroundColor(.primary)
-                            
-                        }
-                        
-                        
-                    }.padding([.horizontal,.top])
-                    
-                }
+//                HStack(spacing: 12){
+//
+//                    HStack{
+//                        Spacer()
+//                        Button(action: {
+//
+//                        }) {
+//                            Image(uiImage: UIImage.init(named: "close")!)
+//                                .resizable()
+//
+//                                .frame(width: 20, height: 20)
+//                                .scaledToFit()
+//                                .foregroundColor(.primary)
+//
+//                        }
+//
+//
+//                    }.padding([.horizontal,.top])
+//
+//                }
               
-                
                 
                 VStack(spacing: 20){
                     Image(uiImage: UIImage.init(named: "logo")!)
@@ -63,7 +63,7 @@ struct LoginView: View {
                         .frame(width: 30, alignment: .leading)
                         .foregroundColor(.primary)
                     
-                    Text("Welcome Back!")
+                    Text("Hey Tribez Buds!")
                     .font(
                     Font.custom("Montserrat", size: 32)
                     .weight(.bold)
@@ -72,15 +72,43 @@ struct LoginView: View {
                     .foregroundColor(Color(red: 0.07, green: 0.07, blue: 0.07))
                     .frame(width: 262, alignment: .top)
                     
-                    Text("Sign in to continue")
+                    Text("Create Your Account")
                     .font(Font.custom("Montserrat", size: 18))
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color(red: 0.2, green: 0.2, blue: 0.2))
                     .frame(width: 171, alignment: .top)
                     
+                    // First Name
+                    TextField("First Name", text:$firstname.onChange({ (value) in
+//                        isSignUpEnable =  !emailID.isEmpty && !password.isEmpty
+                        
+                    }))
+                        .frame(height: 25)
+                        .padding(8)
+                        .background(.gray.opacity(0.05))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.gray.opacity(0.3), lineWidth: 1))
+                        .font(.system(size: 14))
+                        .accessibilityIdentifier("firstname_textfield")
                     
-                    TextField("Phone Number,username or email", text:$emailID.onChange({ (value) in
-                        isLoginEnable =  !emailID.isEmpty && !password.isEmpty
+                    // Last Name
+                    TextField("Last Name", text:$lastname.onChange({ (value) in
+//                        isSignUpEnable =  !emailID.isEmpty && !password.isEmpty
+                        
+                    }))
+                        .frame(height: 25)
+                        .padding(8)
+                        .background(.gray.opacity(0.05))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.gray.opacity(0.3), lineWidth: 1))
+                        .font(.system(size: 14))
+                        .accessibilityIdentifier("lastname_textfield")
+                    
+                    // Email Id
+                    TextField("Email ID", text:$emailID.onChange({ (value) in
+//                        isSignUpEnable =  !emailID.isEmpty && !password.isEmpty
                         
                     }))
                         .frame(height: 25)
@@ -91,6 +119,8 @@ struct LoginView: View {
                                 .stroke(Color.gray.opacity(0.3), lineWidth: 1))
                         .font(.system(size: 14))
                         .accessibilityIdentifier("email_textfield")
+                    
+                    // Password
                     HStack {
                         ZStack(alignment: .trailing) {
                             TextField("Password", text: $password)
@@ -109,7 +139,7 @@ struct LoginView: View {
                                 .font(.system(size: 14))
                                 .opacity(showPassword ? 1 : 0)
                             SecureField("Password", text: $password.onChange({ (value) in
-                                isLoginEnable =  !emailID.isEmpty && !password.isEmpty
+                                isSignUpEnable =  !emailID.isEmpty && !password.isEmpty
                             }))
                                 .frame(height: 25)
                                 .padding(8)
@@ -135,85 +165,44 @@ struct LoginView: View {
                         }
                     }
                     
-                    Button(action: {}) {
-                        Text("Forgot Password?")
-                            .font(.system(size: 13))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                        
-                    }.frame(maxWidth: .infinity,maxHeight: 45,alignment: .trailing)
-                        .foregroundColor(Color.white)
-                        .background(Color.clear)
-                        .cornerRadius(8)
-                    
-                    
                     
                     Button(action: {
                         
-                        viewModel.credentials = UserLoginModel.init(email: emailID, password:  password)
-                        viewModel.loginApi()
+                        viewModel.credentials = UserSignUpModel.init(password:  password, firstname: firstname, email: emailID, lastname: lastname)
+                        viewModel.signUpApi()
                         
                     }) {
-                        Text("Login")
+                        Text("Sign Up")
                             .font(.system(size: 13))
                             .fontWeight(.bold)
                         
                         
                     }.frame(maxWidth: .infinity,maxHeight: 45)
                         .foregroundColor(Color.white)
-                        .background(isLoginEnable ?  Color.black: Color.black.opacity(0.4))
+                        .background(isSignUpEnable ?  Color.black: Color.black.opacity(0.4))
                         .cornerRadius(8)
-                        .accessibilityIdentifier("loginButton")
-                        .disabled(!isLoginEnable)
+                        .accessibilityIdentifier("signupButton")
+                        .disabled(!isSignUpEnable)
                     
-                    HStack{
-                        line
-                        Text("OR")
-                            .font(.system(size: 13))
-                            .fontWeight(.bold)
-                            .foregroundColor(.gray)
-                        line
-                    }
-                    
-                    HStack{
-                        
-                        Button(action: {}) {
-                            Image(uiImage: UIImage.init(named: "facebook_1")!)
-                                .resizable()
-                            
-                                .frame(width: 15, height: 15)
-                                .scaledToFit()
-                                .foregroundColor(.primary)
-                            Text("Facebook")
-                                .font(.system(size: 13))
-                                .fontWeight(.bold)
-                            
-                        }.frame(maxWidth: .infinity,maxHeight: 45)
-                            .foregroundColor(Color.white)
-                            .background(Color.blue)
-                            .cornerRadius(8)
-                            .accessibilityIdentifier("loginButton")
-                            
-                        
-                    }.frame(alignment: .bottom)
+                   
                     
                     
                 }.padding(25)
                 
-                NavigationLink(destination: TabbarView(), isActive: $viewModel.isLogin) {
+                NavigationLink(destination: TabbarView(), isActive: $viewModel.isSignUp) {
                     EmptyView()
                 }.hidden()
                 
-                Spacer()
+               
                 HStack{
-                    Text("Don't have an account?")
+                    Text("You have an account?")
                         .font(.system(size: 15))
                     
                     Button(action: {
                         
                         showShareSheet = true
                     }) {
-                        Text("Signup.")
+                        Text("Sign In.")
                             .font(.system(size: 15))
                         
                         
@@ -228,53 +217,15 @@ struct LoginView: View {
             }
             .navigationTitle("")
             .navigationBarHidden(true)
-            .overlay(overlayView: Banner.init(data: Banner.BannerDataModel(title: "Login", detail: viewModel.errorMessage?.message ?? "", type: .error), show:$viewModel.isToast)
+            .overlay(overlayView: Banner.init(data: Banner.BannerDataModel(title: "Sign Up", detail: viewModel.errorMessage?.message ?? "", type: .error), show:$viewModel.isToast)
                      , show: $viewModel.isToast)
         }
         
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        SignUpView()
     }
 }
-
-
-struct ShareSheet: UIViewControllerRepresentable {
-    typealias Callback = (_ activityType: UIActivity.ActivityType?, _ completed: Bool, _ returnedItems: [Any]?, _ error: Error?) -> Void
-    
-    let activityItems: [Any]
-    let applicationActivities: [UIActivity]? = nil
-    let excludedActivityTypes: [UIActivity.ActivityType]? = nil
-    let callback: Callback? = nil
-    
-    func makeUIViewController(context: Context) -> UIActivityViewController {
-        let controller = UIActivityViewController(
-            activityItems: activityItems,
-            applicationActivities: applicationActivities)
-        controller.excludedActivityTypes = excludedActivityTypes
-        controller.completionWithItemsHandler = callback
-        return controller
-    }
-    
-    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
-        // nothing to do here
-    }
-}
-
-
-
-extension Binding {
-    func onChange(_ handler: @escaping (Value) -> Void) -> Binding<Value> {
-        Binding(
-            get: { self.wrappedValue },
-            set: { newValue in
-                self.wrappedValue = newValue
-                handler(newValue)
-            }
-        )
-    }
-}
-

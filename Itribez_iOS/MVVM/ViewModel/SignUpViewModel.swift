@@ -1,58 +1,45 @@
 //
-//  LoginViewModel.swift
+//  SignUpViewModel.swift
 //  Itribez_iOS
 //
-//  Created by Indu Pandey on 08/08/23.
+//  Created by Indu Pandey on 03/12/23.
 //
-
-
 
 import Foundation
 import SwiftUI
 
 
-struct ValidationResponse {
-    let message: String?
-    let isValid: Bool
-}
-
-
-
-class LoginViewModel:ObservableObject {
+class SignUpViewModel:ObservableObject {
     
-    @Published var isLogin:Bool = false
-    @Published var errorMessage:ValidationResponse?
-    //Here our model notify that was updated
+    @Published var isSignUp:Bool = false
+    @Published var errorMessage: ValidationResponse?
     
     @Published var isToast = false
     
     
     
-    var credentials:UserLoginModel = UserLoginModel.init(email: "", password: ""){
+    var credentials:UserSignUpModel = UserSignUpModel.init(password: "", firstname: "", email: "", lastname: ""){
         didSet {
             
         }
     }
     
-    func loginApi() {
+    func signUpApi() {
         let validationResult = validatatioinCheck()
 
         if validationResult.isValid {
             print(credentials.email, "credentials.email", credentials.password, "credentials.password")
-            self.loginUser(email: credentials.email, password: credentials.password) { result in
+            self.signUpUser( firstname: credentials.firstname, email: credentials.email, lastname: credentials.lastname, password: credentials.password) { result in
                 switch result {
                 case .success(let userResponse):
                     // Update UI with user data
                 print(userResponse, "userResponse")
-                    DispatchQueue.main.async
-                    {
-                        self.isLogin = true
-                        UserDefaults.standard.set(userResponse.token, forKey: "AuthToken")
-                        print("User logged in successfully.")
-                    }
+                    self.isSignUp = true
+                    UserDefaults.standard.set(userResponse.token, forKey: "AuthToken")
+                    print("User registered in successfully.")
                 case .failure(let error):
                     // Handle error
-                    self.isLogin = false
+                    self.isSignUp = false
                     self.isToast = true
                     self.errorMessage = ValidationResponse(message: "Credentials not matched!", isValid: false)
                     print("Error: \(error.localizedDescription)")
@@ -65,13 +52,14 @@ class LoginViewModel:ObservableObject {
         }
     }
     
+
                                     
     
-    func loginUser(email: String, password: String, completion: @escaping (Result<UserLoginResponse, Error>) -> Void) {
-        let endpoint = "https://itribez-node-apis.onrender.com/user/login"
-        let parameters = ["email": email, "password": password]
+    func signUpUser( firstname: String, email: String,lastname: String, password: String, completion: @escaping (Result<UserSignUpResponse, Error>) -> Void) {
+        let endpoint = "https://itribez-node-apis.onrender.com/user/register"
+        let parameters = ["firstname": firstname,"lastname": lastname, "email": email, "password": password]
         
-        APIManager.shared.request(endpoint: endpoint, method: "POST", parameters: parameters) { (result: Result<UserLoginResponse, Error>) in
+        APIManager.shared.request(endpoint: endpoint, method: "POST", parameters: parameters) { (result: Result<UserSignUpResponse, Error>) in
             switch result {
             case .success(let updatedUserResponse):
                 print(updatedUserResponse, "updatedUserResponse")
