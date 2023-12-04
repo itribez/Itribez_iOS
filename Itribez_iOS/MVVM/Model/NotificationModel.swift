@@ -29,10 +29,11 @@ struct NotificationModel: Identifiable {
 
 import Foundation
 
-struct User: Identifiable {
+struct User: Identifiable, Codable {
     var id = UUID()
     let userName: String
     let userImage: String
+
 }
 
 struct Post: Identifiable {
