@@ -52,10 +52,13 @@ class LoginViewModel:ObservableObject {
                     }
                 case .failure(let error):
                     // Handle error
-                    self.isLogin = false
-                    self.isToast = true
-                    self.errorMessage = ValidationResponse(message: "Credentials not matched!", isValid: false)
-                    print("Error: \(error.localizedDescription)")
+                    DispatchQueue.main.async
+                    {
+                        self.isLogin = false
+                        self.isToast = true
+                        self.errorMessage = ValidationResponse(message: "Credentials not matched!", isValid: false)
+                        print("Error: \(error.localizedDescription)")
+                    }
                 }
             }
             

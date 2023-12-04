@@ -33,7 +33,7 @@ struct TabbarView: View {
                     .navigationBarHidden(true)
                     .tag(1)
                 
-                ReelsView()
+                CreatePostView()
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
                     .tag(2)

@@ -52,6 +52,8 @@
 		03FCAE642B1D161A00371869 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCAE632B1D161A00371869 /* SignUpView.swift */; };
 		03FCAE662B1D258D00371869 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCAE652B1D258D00371869 /* APIManager.swift */; };
 		03FCAE682B1D5A9E00371869 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCAE672B1D5A9E00371869 /* SignUpViewModel.swift */; };
+		03FCAE722B1D9C8600371869 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCAE712B1D9C8600371869 /* CreatePostView.swift */; };
+		03FCAE742B1D9CC400371869 /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCAE732B1D9CC400371869 /* SUImagePickerView.swift */; };
 		633955052B092963005DE1BE /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633955042B092963005DE1BE /* PostGridView.swift */; };
 		633955072B0929A6005DE1BE /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633955062B0929A6005DE1BE /* ProfileHeader.swift */; };
 		633B1DD72AB8C8500094680F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B1DD62AB8C8500094680F /* LoginView.swift */; };
@@ -106,6 +108,8 @@
 		03FCAE632B1D161A00371869 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		03FCAE652B1D258D00371869 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		03FCAE672B1D5A9E00371869 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		03FCAE712B1D9C8600371869 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		03FCAE732B1D9CC400371869 /* SUImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
 		633955042B092963005DE1BE /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		633955062B0929A6005DE1BE /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		633B1DD62AB8C8500094680F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				03579FED2A82BA2900035C5B /* String + Extension.swift */,
 				03579FF02A82BA2900035C5B /* ThemeHelper.swift */,
 				03579FEB2A82BA2900035C5B /* Toast.swift */,
+				03FCAE732B1D9CC400371869 /* SUImagePickerView.swift */,
 				03579FEC2A82BA2900035C5B /* Userdata.json */,
 				0357A03C2A82DF3600035C5B /* MockData.swift */,
 			);
@@ -160,6 +165,7 @@
 				633B1DD62AB8C8500094680F /* LoginView.swift */,
 				63A186032AC4BF1D006802F5 /* PostView.swift */,
 				03FCAE632B1D161A00371869 /* SignUpView.swift */,
+				03FCAE712B1D9C8600371869 /* CreatePostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -370,6 +376,8 @@
 				0357A01D2A82C05400035C5B /* LoginViewModel.swift in Sources */,
 				03579FE92A82B7B500035C5B /* Itribez_iOS.xcdatamodeld in Sources */,
 				0357A0332A82C1A800035C5B /* Layout1.swift in Sources */,
+				03FCAE742B1D9CC400371869 /* SUImagePickerView.swift in Sources */,
+				03FCAE722B1D9C8600371869 /* CreatePostView.swift in Sources */,
 				0357A02E2A82C18C00035C5B /* SearchView.swift in Sources */,
 				0357A03F2A832C8200035C5B /* MessageContainerView.swift in Sources */,
 				0357A0272A82C15A00035C5B /* ProfileModel.swift in Sources */,

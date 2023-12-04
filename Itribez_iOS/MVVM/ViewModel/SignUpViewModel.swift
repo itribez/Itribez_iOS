@@ -34,15 +34,21 @@ class SignUpViewModel:ObservableObject {
                 case .success(let userResponse):
                     // Update UI with user data
                 print(userResponse, "userResponse")
-                    self.isSignUp = true
-                    UserDefaults.standard.set(userResponse.token, forKey: "AuthToken")
-                    print("User registered in successfully.")
+                    DispatchQueue.main.async
+                    {
+                        self.isSignUp = true
+                        UserDefaults.standard.set(userResponse.token, forKey: "AuthToken")
+                        print("User registered in successfully.")
+                    }
                 case .failure(let error):
                     // Handle error
-                    self.isSignUp = false
-                    self.isToast = true
-                    self.errorMessage = ValidationResponse(message: "Credentials not matched!", isValid: false)
-                    print("Error: \(error.localizedDescription)")
+                    DispatchQueue.main.async
+                    {
+                        self.isSignUp = false
+                        self.isToast = true
+                        self.errorMessage = ValidationResponse(message: "Credentials not matched!", isValid: false)
+                        print("Error: \(error.localizedDescription)")
+                    }
                 }
             }
             
