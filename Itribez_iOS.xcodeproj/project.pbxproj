@@ -43,6 +43,15 @@
 		0357A0392A82DE7000035C5B /* NotificationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0357A0382A82DE7000035C5B /* NotificationContainerView.swift */; };
 		0357A03D2A82DF3600035C5B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0357A03C2A82DF3600035C5B /* MockData.swift */; };
 		0357A03F2A832C8200035C5B /* MessageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0357A03E2A832C8200035C5B /* MessageContainerView.swift */; };
+		038738B32B1EE0240030D542 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038738B22B1EE0240030D542 /* WidgetKit.framework */; };
+		038738B52B1EE0240030D542 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038738B42B1EE0240030D542 /* SwiftUI.framework */; };
+		038738B82B1EE0240030D542 /* Itribez_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038738B72B1EE0240030D542 /* Itribez_WidgetBundle.swift */; };
+		038738BA2B1EE0240030D542 /* Itribez_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038738B92B1EE0240030D542 /* Itribez_WidgetLiveActivity.swift */; };
+		038738BC2B1EE0240030D542 /* Itribez_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038738BB2B1EE0240030D542 /* Itribez_Widget.swift */; };
+		038738BF2B1EE0250030D542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038738BE2B1EE0250030D542 /* Assets.xcassets */; };
+		038738C12B1EE0250030D542 /* Itribez_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 038738BD2B1EE0240030D542 /* Itribez_Widget.intentdefinition */; };
+		038738C22B1EE0250030D542 /* Itribez_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 038738BD2B1EE0240030D542 /* Itribez_Widget.intentdefinition */; };
+		038738C52B1EE0250030D542 /* Itribez_WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 038738B02B1EE0240030D542 /* Itribez_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03A78A342A66DDDA00C88418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78A332A66DDDA00C88418 /* AppDelegate.swift */; };
 		03A78A362A66DDDA00C88418 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78A352A66DDDA00C88418 /* SceneDelegate.swift */; };
 		03A78A382A66DDDA00C88418 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A78A372A66DDDA00C88418 /* ViewController.swift */; };
@@ -61,6 +70,30 @@
 		63A186042AC4BF1D006802F5 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A186032AC4BF1D006802F5 /* PostView.swift */; };
 		EE275C382A6D6B2C0098DAA6 /* itribez.png in Resources */ = {isa = PBXBuildFile; fileRef = EE275C372A6D6B2C0098DAA6 /* itribez.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		038738C32B1EE0250030D542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03A78A282A66DDDA00C88418 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038738AF2B1EE0240030D542;
+			remoteInfo = Itribez_WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		038738C62B1EE0250030D542 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				038738C52B1EE0250030D542 /* Itribez_WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03579FDD2A82B60200035C5B /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -97,6 +130,15 @@
 		0357A0382A82DE7000035C5B /* NotificationContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationContainerView.swift; sourceTree = "<group>"; };
 		0357A03C2A82DF3600035C5B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		0357A03E2A832C8200035C5B /* MessageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContainerView.swift; sourceTree = "<group>"; };
+		038738B02B1EE0240030D542 /* Itribez_WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Itribez_WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		038738B22B1EE0240030D542 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		038738B42B1EE0240030D542 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		038738B72B1EE0240030D542 /* Itribez_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itribez_WidgetBundle.swift; sourceTree = "<group>"; };
+		038738B92B1EE0240030D542 /* Itribez_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itribez_WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		038738BB2B1EE0240030D542 /* Itribez_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itribez_Widget.swift; sourceTree = "<group>"; };
+		038738BD2B1EE0240030D542 /* Itribez_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Itribez_Widget.intentdefinition; sourceTree = "<group>"; };
+		038738BE2B1EE0250030D542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		038738C02B1EE0250030D542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A78A302A66DDDA00C88418 /* Itribez_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Itribez_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A78A332A66DDDA00C88418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03A78A352A66DDDA00C88418 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +161,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		038738AD2B1EE0240030D542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038738B52B1EE0240030D542 /* SwiftUI.framework in Frameworks */,
+				038738B32B1EE0240030D542 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03A78A2D2A66DDDA00C88418 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,10 +277,34 @@
 			path = ContainerViews;
 			sourceTree = "<group>";
 		};
+		038738B12B1EE0240030D542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				038738B22B1EE0240030D542 /* WidgetKit.framework */,
+				038738B42B1EE0240030D542 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		038738B62B1EE0240030D542 /* Itribez_Widget */ = {
+			isa = PBXGroup;
+			children = (
+				038738B72B1EE0240030D542 /* Itribez_WidgetBundle.swift */,
+				038738B92B1EE0240030D542 /* Itribez_WidgetLiveActivity.swift */,
+				038738BB2B1EE0240030D542 /* Itribez_Widget.swift */,
+				038738BD2B1EE0240030D542 /* Itribez_Widget.intentdefinition */,
+				038738BE2B1EE0250030D542 /* Assets.xcassets */,
+				038738C02B1EE0250030D542 /* Info.plist */,
+			);
+			path = Itribez_Widget;
+			sourceTree = "<group>";
+		};
 		03A78A272A66DDDA00C88418 = {
 			isa = PBXGroup;
 			children = (
 				03A78A322A66DDDA00C88418 /* Itribez_iOS */,
+				038738B62B1EE0240030D542 /* Itribez_Widget */,
+				038738B12B1EE0240030D542 /* Frameworks */,
 				03A78A312A66DDDA00C88418 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -238,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				03A78A302A66DDDA00C88418 /* Itribez_iOS.app */,
+				038738B02B1EE0240030D542 /* Itribez_WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,6 +341,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		038738AF2B1EE0240030D542 /* Itribez_WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038738C92B1EE0250030D542 /* Build configuration list for PBXNativeTarget "Itribez_WidgetExtension" */;
+			buildPhases = (
+				038738AC2B1EE0240030D542 /* Sources */,
+				038738AD2B1EE0240030D542 /* Frameworks */,
+				038738AE2B1EE0240030D542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Itribez_WidgetExtension;
+			productName = Itribez_WidgetExtension;
+			productReference = 038738B02B1EE0240030D542 /* Itribez_WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		03A78A2F2A66DDDA00C88418 /* Itribez_iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03A78A442A66DDDC00C88418 /* Build configuration list for PBXNativeTarget "Itribez_iOS" */;
@@ -272,10 +365,12 @@
 				03A78A2C2A66DDDA00C88418 /* Sources */,
 				03A78A2D2A66DDDA00C88418 /* Frameworks */,
 				03A78A2E2A66DDDA00C88418 /* Resources */,
+				038738C62B1EE0250030D542 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				038738C42B1EE0250030D542 /* PBXTargetDependency */,
 			);
 			name = Itribez_iOS;
 			packageProductDependencies = (
@@ -293,9 +388,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					038738AF2B1EE0240030D542 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					03A78A2F2A66DDDA00C88418 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -319,11 +417,20 @@
 			projectRoot = "";
 			targets = (
 				03A78A2F2A66DDDA00C88418 /* Itribez_iOS */,
+				038738AF2B1EE0240030D542 /* Itribez_WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		038738AE2B1EE0240030D542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038738BF2B1EE0250030D542 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03A78A2E2A66DDDA00C88418 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,12 +447,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		038738AC2B1EE0240030D542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038738C12B1EE0250030D542 /* Itribez_Widget.intentdefinition in Sources */,
+				038738BC2B1EE0240030D542 /* Itribez_Widget.swift in Sources */,
+				038738BA2B1EE0240030D542 /* Itribez_WidgetLiveActivity.swift in Sources */,
+				038738B82B1EE0240030D542 /* Itribez_WidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03A78A2C2A66DDDA00C88418 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0357A02C2A82C16600035C5B /* FeedViewModel.swift in Sources */,
 				0357A0392A82DE7000035C5B /* NotificationContainerView.swift in Sources */,
+				038738C22B1EE0250030D542 /* Itribez_Widget.intentdefinition in Sources */,
 				03579FE32A82B60300035C5B /* Itribez_iOSApp.swift in Sources */,
 				0357A01F2A82C0AB00035C5B /* UserModel.swift in Sources */,
 				0357A0132A82BB1900035C5B /* SplashView.swift in Sources */,
@@ -394,6 +513,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		038738C42B1EE0250030D542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 038738AF2B1EE0240030D542 /* Itribez_WidgetExtension */;
+			targetProxy = 038738C32B1EE0250030D542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		03A78A392A66DDDA00C88418 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -414,6 +541,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		038738C72B1EE0250030D542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWU3Y5ZGR2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Itribez_Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Itribez_Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.georgiancollege.Itribez-iOS.Itribez-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		038738C82B1EE0250030D542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWU3Y5ZGR2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Itribez_Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Itribez_Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.georgiancollege.Itribez-iOS.Itribez-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		03A78A422A66DDDC00C88418 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +714,7 @@
 		03A78A452A66DDDC00C88418 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,6 +743,7 @@
 		03A78A462A66DDDC00C88418 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,6 +772,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		038738C92B1EE0250030D542 /* Build configuration list for PBXNativeTarget "Itribez_WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038738C72B1EE0250030D542 /* Debug */,
+				038738C82B1EE0250030D542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03A78A2B2A66DDDA00C88418 /* Build configuration list for PBXProject "Itribez_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
